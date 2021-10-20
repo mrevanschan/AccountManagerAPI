@@ -9,3 +9,11 @@ Simple Spring boot application to demo API for Account Manager
 | POST | /transfer | create transaction | curl --location --request POST 'http://localhost:8080/transfer' \ <br>--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3OCIsImV4cCI6MTYzNDc3NTQ2NCwiaWF0IjoxNjM0NzM5NDY0fQ.KfLcFdHOkx4PnIaUUpM_teVhsxCUaYsolLT8ixU8yOE' \ <br>--header 'Content-Type: application/json' \ <br>--data-raw '{<br>"amount": 50,<br>"toAccount":"88888888"<br>}' | SUCCESS |
 
 
+### Initial H2 Database data
+| Account Id | Password | Balance |
+| --- | --- | --- |
+| 11111111 | 1234567890 | 1000000 |
+| 12345678 | 1234567890 | 1000000 |
+| 1 | 1234567890 | 500 |
+| 2 | 1234567890 | 0 |
+
